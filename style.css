@@ -1,0 +1,393 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GERAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #240046 0%, #7b2cbf 50%, #e79110 50%, #f1c40f 100%);
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden; /* evita scroll lateral */
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  background: radial-gradient(circle, rgb(150, 89, 224) 15%, #6f35a9 100%);
+  color: rgb(38, 17, 48);
+  min-height: 140px;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.hero-content {
+  width: 100%;
+}
+
+.hero-main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-main h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* HERO INFO */
+.hero-info {
+  margin: -60px auto 0 auto;
+  text-align: center;
+  max-width: 350px;
+  font-size: 18px;
+  color: rgb(55, 33, 71);
+  padding: 0 15px;
+}
+
+.feature-hero-info {
+  background: rgb(231, 144, 22);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  width: 100%;
+}
+
+.feature-hero-info:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.hero-info p {
+  margin-bottom: 8px;
+}
+
+/* LOGO */
+.nav-top {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  margin-top: -15px;
+  width: 310px;
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* BOTÕES */
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* FEATURE SECTIONS */
+
+.feature {
+  padding: 100px 20px;
+}
+
+.feature-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.feature.reverse .feature-content {
+  flex-direction: row-reverse;
+}
+
+.feature-text {
+  flex: 1;
+  text-align: left;
+}
+
+.feature-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.feature-image {
+  flex: 1;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+/* CARDS */
+
+.feature-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  max-width: 420px;
+  margin: auto;
+}
+
+/* CARROSSEL */
+
+.carousel-section {
+   margin-top: -160px;
+  padding: 80px 20px;
+}
+
+.carousel {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.dots {
+  margin-top: 15px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  display: inline-block;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #d67b6c;
+}
+
+/* REVIEWS */
+
+.reviews-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.review-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
+  max-width: 100%;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* PAGAMENTOS */
+
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.payment-icons div {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  min-width: 120px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-icons div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* CTA FINAL */
+
+.cta-final {
+  padding: 60px 20px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 280px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+
+  .feature-content {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .feature-text {
+    text-align: center;
+  }
+
+  .feature-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .hero-main h1 {
+    font-size: 22px;
+  }
+
+  .hero-info {
+    margin-top: -40px;
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .slides img {
+    height: 250px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
+
+/* ========================= */
+/* HOVER RESTAURADO */
+/* ========================= */
+
+.feature-card,
+.review-card,
+.info-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover,
+.review-card:hover,
+.info-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+
+/* ========================= */
+/* SCROLL ANIMATION */
+/* ========================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CORREÇÃO PARA HOVER FUNCIONAR JUNTO COM REVEAL */
+
+.review-card.reveal.active:hover,
+.feature-card.reveal.active:hover,
+.info-box.reveal.active:hover {
+  transform: translateY(-8px);
+}
+
+
+/* SCROLL ANIMATION */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
